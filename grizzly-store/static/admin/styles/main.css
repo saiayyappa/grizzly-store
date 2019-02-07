@@ -38,14 +38,12 @@ input[type=text]:active
   opacity: 1 !important; /* Firefox */
 }
 .top-buffer { margin-top:20px; }
+.right-buffer { margin-right:20px; }
 .btn-flex{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-}
-.btn-1{
-    margin-right: 50px;
 }
 .title-flex{
     display: flex;
@@ -71,3 +69,4 @@ table tr:last-child td {
 table tr td:last-child {
   border-right: 0;
 }
+

@@ -2454,8 +2454,8 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #cdcdcd;
+  border-color: #cdcdcd;
 }
 
 .btn-secondary:hover {
@@ -4080,10 +4080,13 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  background-color: #f2f2f2;
+  padding-right: 10rem;
 }
 
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
+  color: darkgrey;
 }
 
 .nav-link.disabled {
@@ -4092,35 +4095,20 @@ input[type="button"].btn-block {
   cursor: default;
 }
 
-.nav-tabs {
-  border-bottom: 1px solid #dee2e6;
-}
-
 .nav-tabs .nav-item {
   margin-bottom: -1px;
 }
 
-.nav-tabs .nav-link {
-  border: 1px solid transparent;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-}
-
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
-}
 
 .nav-tabs .nav-link.disabled {
   color: #6c757d;
-  background-color: transparent;
-  border-color: transparent;
 }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
+  color: black;
+  background-color: #cdcdcd;
+  border-bottom: 5px solid #979797;
 }
 
 .nav-tabs .dropdown-menu {
@@ -4158,7 +4146,7 @@ input[type="button"].btn-block {
 }
 
 .tab-content > .active {
-  display: block;
+  display: inline;
 }
 
 .navbar {
@@ -6570,7 +6558,11 @@ button.bg-dark:focus {
 }
 
 .rounded-circle {
-  border-radius: 50% !important;
+  border-radius: 25px !important;
+      border-radius: 25px; 
+    background-color:#cdcdcd;
+    border:none;
+    padding: 5px 20px;
 }
 
 .rounded-pill {
@@ -9894,16 +9886,26 @@ a.text-dark:hover, a.text-dark:focus {
     border: none;
 }
 
-.btn-rounded{
-    border-radius: 25px; 
-    background-color:#cdcdcd;
-    border:none;
-    padding: 5px 20px;
-}
-
 .search-box{
     background-color:white;
 }
+
+.searchContainer {
+  display: inline-flex;
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.searchIcon {
+  padding-top: 0.5rem;
+}
+
+.searchBox {
+  border: 0;
+}
+
 .card{
     margin: 50px;
     width: 25rem;
@@ -9928,3 +9930,4 @@ a.text-dark:hover, a.text-dark:focus {
 .bor{
   border: 1px solid gray;
 }
+a:link { color: gray; }
