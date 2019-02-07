@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grizzly Store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <script src="scripts/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid n">
+        <div class="row align-items-center" style="padding: 20px;">
+                <div class="col-sm-2"><span class ="nav-brand" style="font-size: 20px;">GRIZZLY<img src="images/logo-nav.png" width="50px" height="50px"/>STORE</span></div>
+                <div class="col-sm-2 lead"><input type="search" placeholder="Search  &#128269;" class="btn-rounded search-box"></div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-1 lead text-right">&#128276;</div>
+                <div class="col-sm-2 lead text-center">Welcome, Admin Helen</div>
+                <div class="col-sm-1 lead text-right"><button type="submit" class="btn btn-secondary btn-rounded"><span style="color:black">Logout</span></button></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" col-sm-3">
+            <div class="card profile" ><div class="title-flex card-title">
+                <h5 class="card-title">PROFILE</h5>
+               <span><h5>Edit</h5></span></div>
+                <img class="card-img-top" src="images/human.png" alt="Card image cap" width="25">
+                <div class="card-body">
+                        <p class="card-text profile-text">Helen Cho <br> <strong>ID</strong> <br> GRZLY17234 <br> <strong> Degination</strong> <br> Sr. Admin <br> <strong>Office</strong> <br> NYC, NY, US</p>    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col ">
+                <div class="add-product ">
+                    <div class="row" >
+                        <div class="col-sm-4 gr"><span>PRODUCTS</span></div>
+                        <div class="col-sm-4 gr"><span>VENDORS</span></div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                    <div class="row top-buffer align-items-left">
+                        <div class="col "><button class="btn btn-secondary btn-rounded btn-1" disabled>Choose Action</button></div>
+                        <div class="col "><input type="search" placeholder="Category Name  &#128269;" class="btn btn-secondary btn-rounded btn-1"></div>
+                        <div class="col "><button class="btn btn-secondary btn-rounded btn-1" disabled>Sort By</button></div>
+                        <div class="col "></div>
+                        <div class="col "><button class="btn btn-secondary btn-rounded btn-1" disabled>Add Product</button></div>
+                    </div>
+                    <div class="row top-buffer">
+                        <div class="col">
+                            <form>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Brand</th>
+                                            <th>Category</th>
+                                            <th>Rating</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Trimmer</td>
+                                            <td>Philips</td>
+                                            <td>Personal Care</td>
+                                            <td>4.7</td>
+                                            <td>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>View</button>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>Block</button>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>Remove</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shaver</td>
+                                            <td>Braun</td>
+                                            <td>Personal Care</td>
+                                            <td>4.8</td>
+                                            <td>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>View</button>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>Block</button>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>Remove</button>
+                                            </td>
+                                        </tr>
+                                        <tr><td>Macbook Pro</td>
+                                            <td>Apple</td>
+                                            <td>Laptops</td>
+                                            <td>4.9</td>
+                                            <td>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>View</button>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>Block</button>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>Remove</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>iMac 27"</td>
+                                            <td>Apple</td>
+                                            <td>Laptops</td>
+                                            <td>4.6</td>
+                                            <td>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>View</button>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>Block</button>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>Remove</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Micro Pens</td>
+                                            <td>Sakura Pigma</td>
+                                            <td>Art Supplies</td>
+                                            <td>4.1</td>
+                                            <td>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>View</button>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>Block</button>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>Remove</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Paint Makers</td>
+                                            <td>Copic</td>
+                                            <td>Art Supplies</td>
+                                            <td>4.2</td>
+                                            <td>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>View</button>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>Block</button>
+                                                <button class="btn btn-secondary btn-rounded btn-1" disabled>Remove</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+    </div>
+    </div>
+</body>
+
+</html>
