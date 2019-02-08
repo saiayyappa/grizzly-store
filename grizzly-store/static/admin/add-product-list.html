@@ -32,9 +32,10 @@
       <div class="row">
         <div class=" col-sm-3">
           <div class="card profile h-100">
-            <div class="title-flex card-title">
-              <h5 class="card-title">PROFILE</h5>
-              <span><h5>Edit</h5></span></div>
+            <div class="align-items-center d-md-flex card-title justify-content-between">
+              <div class="card-title h5 p-2">PROFILE</div>
+              <div><h5 class="pr-2">Edit</h5></div>
+              </div>
             <img class="card-img-top" src="images/human.png" alt="Card image cap" width="25">
             <div class="card-body">
               <p class="card-text profile-text">Helen Cho <br> <strong>ID</strong> <br> GRZLY17234 <br> <strong> Degination</strong> <br> Sr. Admin <br> <strong>Office</strong> <br> NYC, NY, US</p>
@@ -62,96 +63,134 @@
             </div>
             <div class="tab-content">
               <div id="home" class="tab-pane active"><br>
-                <div class="row top-buffer align-items-left">
-                  <div class="col "><button class="btn btn-secondary rounded-circle " disabled>Choose Action</button></div>
-                  <div class="col "><input type="search" placeholder="Category Name  &#128269;" class="btn btn-secondary rounded-circle "></div>
-                  <div class="col "><button class="btn btn-secondary rounded-circle " disabled>Sort By</button></div>
-                  <div class="col "></div>
-                  <div class="col "><button class="btn btn-secondary rounded-circle " disabled>Add Product</button></div>
+                <div class=" top-buffer d-flex flex-row align-items-center justify-content-between">
+                  <div class="d-flex">
+                    <button class="btn rounded-circle1 mr-4">Choose Action</button>
+                    <div class="rounded-circle1 mr-4"><input type="search" placeholder="Category Name " class=" rounded-circle1"><i class="fa fa-search searchIcon"></i></div>
+                    <input type="text" list="sortby" class="rounded-circle1" name="sortby" placeholder="Sort By">
+                      <hr>
+                      <datalist id="sortby">
+                          <option value="Ascending">
+                          <option value="Descending">
+                      </datalist>
+                  </div>
+                  <div>
+                    <form action="add-product-desc.html">
+                    <button class="btn btn-dark rounded-circle ">Add Product</button>
+                    </form>
+                  </div>
                 </div>
                 <div class="row top-buffer">
                   <div class="col">
+                    <div class="table-wrapper-scroll-y">
                     <form>
-                      <table class="table table-hover">
+                      <table class="table h4 w-100 h-100">
                         <thead>
                           <tr>
-                            <th>Product</th>
-                            <th>Brand</th>
-                            <th>Category</th>
-                            <th>Rating</th>
-                            <th></th>
+                            <th class="no-border"></th>
+                            <th class="text-center">Products List</th>
+                            <th class="text-center">Brand</th>
+                            <th class="text-center">Category</th>
+                            <th class="text-center">Rating</th>
+                            <th class="text-center"></th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
+                            <td><div class="round">
+                                  <input type="checkbox" id="1" />
+                                  <label for="1"></label>
+                                </div>
+                            </td>
                             <td>Trimmer</td>
                             <td>Philips</td>
                             <td>Personal Care</td>
                             <td>4.7</td>
                             <td>
-                              <button class="btn btn-secondary rounded-circle " disabled>View</button>
-                              <button class="btn btn-secondary rounded-circle " disabled>Block</button>
-                              <button class="btn btn-secondary rounded-circle " disabled>Remove</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>View</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>Block</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>Remove</button>
                             </td>
                           </tr>
                           <tr>
+                            <td><div class="round">
+                                  <input type="checkbox" id="2" />
+                                  <label for="2"></label>
+                                </div></td>
                             <td>Shaver</td>
                             <td>Braun</td>
                             <td>Personal Care</td>
                             <td>4.8</td>
                             <td>
-                              <button class="btn btn-secondary rounded-circle " disabled>View</button>
-                              <button class="btn btn-secondary rounded-circle " disabled>Block</button>
-                              <button class="btn btn-secondary rounded-circle " disabled>Remove</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>View</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>Block</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>Remove</button>
                             </td>
                           </tr>
                           <tr>
+                            <td><div class="round">
+                                  <input type="checkbox" id="3" />
+                                  <label for="3"></label>
+                                </div></td>
                             <td>Macbook Pro</td>
                             <td>Apple</td>
                             <td>Laptops</td>
                             <td>4.9</td>
                             <td>
-                              <button class="btn btn-secondary rounded-circle " disabled>View</button>
-                              <button class="btn btn-secondary rounded-circle " disabled>Block</button>
-                              <button class="btn btn-secondary rounded-circle " disabled>Remove</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>View</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>Block</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>Remove</button>
                             </td>
                           </tr>
                           <tr>
+                            <td><div class="round">
+                                  <input type="checkbox" id="4" />
+                                  <label for="4"></label>
+                                </div></td>
                             <td>iMac 27"</td>
                             <td>Apple</td>
                             <td>Laptops</td>
                             <td>4.6</td>
                             <td>
-                              <button class="btn btn-secondary rounded-circle " disabled>View</button>
-                              <button class="btn btn-secondary rounded-circle " disabled>Block</button>
-                              <button class="btn btn-secondary rounded-circle " disabled>Remove</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>View</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>Block</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>Remove</button>
                             </td>
                           </tr>
                           <tr>
+                            <td><div class="round">
+                                  <input type="checkbox" id="5" />
+                                  <label for="5"></label>
+                                </div></td>
                             <td>Micro Pens</td>
                             <td>Sakura Pigma</td>
                             <td>Art Supplies</td>
                             <td>4.1</td>
                             <td>
-                              <button class="btn btn-secondary rounded-circle " disabled>View</button>
-                              <button class="btn btn-secondary rounded-circle " disabled>Block</button>
-                              <button class="btn btn-secondary rounded-circle " disabled>Remove</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>View</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>Block</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>Remove</button>
                             </td>
                           </tr>
                           <tr>
+                            <td><div class="round">
+                                  <input type="checkbox" id="6" />
+                                  <label for="6"></label>
+                                </div></td>
                             <td>Paint Makers</td>
                             <td>Copic</td>
                             <td>Art Supplies</td>
                             <td>4.2</td>
                             <td>
-                              <button class="btn btn-secondary rounded-circle " disabled>View</button>
-                              <button class="btn btn-secondary rounded-circle " disabled>Block</button>
-                              <button class="btn btn-secondary rounded-circle " disabled>Remove</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>View</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>Block</button>
+                              <button class="btn btn-secondary rounded-circle ml-3 mr-3" disabled>Remove</button>
                             </td>
                           </tr>
                         </tbody>
                       </table>
                     </form>
+                    </div>
                   </div>
                 </div>
               </div>
